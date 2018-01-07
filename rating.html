@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+<title>AmusementAdvisor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+   	background: url('https://ak3.picdn.net/shutterstock/videos/4826771/thumb/1.jpg');
+    background-size: 100% 100%;
+    min-height: 100%;
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Dio za posvjetljivanje slika */
+.slika1, .slika2, .slika3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Prva slika na stranici-ruke */
+.slika1 {
+    background-image: url('https://ak3.picdn.net/shutterstock/videos/4826771/thumb/1.jpg');
+    
+    min-height: 100%;
+    
+}
+
+
+#javna-statistika {
+	margin-bottom: 30px;
+}
+
+#privatna-statistika{
+	display: none;
+}
+
+
+#dugmeObrisi {
+	display: block;
+	width: 100px;
+	height: 50px;
+	color: white;
+	margin: 20px auto;
+	background-color: #a4287d;
+	opacity:0.8;
+	border-radius: 0.5%;
+}
+
+#blabla {
+	display: block;
+}
+
+.modal-body {
+	font-size: 20px;
+}
+
+
+
+</style>
+<body >
+
+<!-- MENI-navigacija -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">POÈETNA</a>
+   
+
+    </a>
+  </div>
+
+  <!-- MENI-navigacija na malim ureðajima -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    
+  </div>
+</div>
+
+
+
+
+	<br><br><br><br>
+	 <div align=center>
+	
+   	<h1 id="prijavaNaslov" align=center>Prijavite se da bi vidjeli tabelu</h1>
+		<button type="button" 	background-color: "purple"  class="btn btn-primary" data-toggle="modal" data-target="#login" align=center onclick="">Prijava</button>
+	</div>
+
+
+<div class="container-fluid text-center" id="privatna-statistika">
+		<h1>Tabela lokala</h1>
+		<br><br>
+			<div class="table-responsive">          
+				<table class="table" id="tabela"  bgcolor=”purple” text-color="black"  font-weight= "900">
+					<thead>
+						<tr>
+							<th>
+								<input name="select_all" id="oznSve" value="1" type="checkbox" onclick="oznaciSve()">
+							</th>
+							<th>
+								Ime
+								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(1)"></span>
+								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(1)"></span>
+							</th>
+							<th>
+								Ocjena
+								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(2)"></span>
+								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(2)"></span>
+							</th>
+							<th>
+								Rang cijena(1-10)
+								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(3)"></span>
+								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(3)"></span>
+							</th>
+							<th>
+								Kapacitet
+								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(4)"></span>
+								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(4)"></span>
+							</th>
+							<th>
+								Datum sljedeceg eventa
+								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(5)"></span>
+								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(5)"></span>
+							</th>
+							
+						</tr>
+					</thead>
+					
+					<tbody align=left>
+					<tr class="danger">
+					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
+        <td>Cheers</td>
+        <td>3</td>
+        <td>5</td>
+        <td>150</td>
+        <td>25.12.2017.</td>
+        </tr> 
+        	<tr class="danger">
+					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
+        <td>Pasta ZEN</td>
+        <td>4</td>
+        <td>8</td>
+        <td>65</td>
+        <td>15.12.2017.</td>
+        </tr> 
+        	<tr class="danger">
+					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
+        <td>Brew pub</td>
+        <td>5</td>
+        <td>7</td>
+        <td>70</td>
+         <td>15.12.2017.</td>
+        </tr> 
+        	<tr class="danger">
+					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
+        <td>Mikser</td>
+        <td>5</td>
+        <td>6</td>
+        <td>500</td>
+         <td>20.12.2017.</td>        
+        </tr> 
+                	<tr class="danger">
+					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
+        <td>Revolucija</td>
+        <td>4</td>
+        <td>8</td>
+        <td>40</td>
+         <td>31.12.2017.</td>
+        </tr> 
+        	<tr class="danger">
+					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
+        <td>ORT</td>
+        <td>4</td>
+        <td>4</td>
+        <td>45</td>
+         <td>24.12.2017.</td>
+        </tr> 
+        <tr class="danger">
+					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
+        <td>Cinemas Sloga</td>
+        <td>2</td>
+        <td>4</td>
+        <td>600</td>
+         <td>24.12.2017.</td>
+        </tr> 
+        <tr class="danger">
+					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
+        <td>Vatra</td>
+        <td>4</td>
+        <td>8</td>
+        <td>80</td>
+         <td>24.12.2017.</td>
+        </tr> 
+        <tr class="danger">
+					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
+        <td>Trasa</td>
+        <td>3</td>
+        <td>4</td>
+        <td>95</td>
+         <td>29.12.2017.</td>
+        </tr> <tr class="danger">
+					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
+        <td>Woki</td>
+        <td>3</td>
+        <td>3</td>
+        <td>100</td>
+         <td>26.12.2017.</td>
+        </tr> 
+      	
+					</tbody>
+				</table>
+			<button id="dugmeObrisi" onclick="obrisi()">
+				Obrisi selektovano
+			</button>
+		</div>
+		
+		<!--- <script src="js/dataTables.bootstrap.min.js"></script>
+	   <script> $('#tabela').dataTable();</script> ne radi --> 
+	<!--<button type="button" id="dugme" onclick="obrisi()">Obrisi selektovano</button>
+	-->
+	</div>
+	
+	
+	<script type="text/javascript" src="tabela.js"></script>
+
+
+<div id="login" class="modal fade" data-backdrop="static" data-keyboard="false" role="dialog">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title">Prijava</h2>
+				</div>
+				<div class="modal-body text-center">
+					<form method="post" action='' name="login_form">
+						<div class="login-unos">
+							<span><div class="glyphicon glyphicon-user"></div></span>
+							<input type="text" class="form-control" id="user" placeholder="Korisnièko ime">
+							<br />
+						</div>
+						<div class="login-unos">
+							<span><div class="glyphicon glyphicon-lock"></div></span>
+							<input type="password" class="form-control" name="pass" id="pass" placeholder="Šifra">
+						</div>
+						<br />
+						<button type="button" class="btn btn-primary" onclick="validiraj()">Sign in</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="validiraj.js"></script>
+
+<script>
+
+	
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+
+
+
+
+
+</body>
+</html>
+

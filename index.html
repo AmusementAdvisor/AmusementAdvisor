@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+<title>AmusementAdvisor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="funkcije.js"></script>
+<script type="text/javascript" src="snijeg.js"></script>
+
+</head>
+<body>
+
+
+
+<!-- MENI-navigacija -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#poèetna" class="w3-bar-item w3-button">POÈETNA</a>
+    <a href="#o nama" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> O NAMA</a>
+    <a href="#ponuda" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PONUDA</a>
+    <a href="rating.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> RATING</a>
+    <a href="#kontakt" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+</div>
+</div>
+
+
+
+  <!-- MENI-navigacija na malim ureðajima -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#o nama" class="w3-bar-item w3-button" onclick="toggleFunction()">O NAMA</a>
+    <a href="#ponuda" class="w3-bar-item w3-button" onclick="toggleFunction()">PONUDA</a>
+    <a href="rating.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> RATING</a>
+    <a href="#kontakt" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+    <a href="#" class="w3-bar-item w3-button">TRAŽI</a>
+  </div>
+</div>
+
+<!-- PRVA SLIKA-->
+<div class="slika1 w3-display-container w3-opacity-min" id="poèetna">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">AMUSEMENT    ADVISOR</span>
+  </div>
+</div>
+	
+<!-- Iz menija O NAMA-->
+<div class="w3-content w3-container w3-padding-64" id="o nama">
+  <h3 class="w3-center">O NAMA</h3>
+  <p class="w3-center"><em>Carpe diem!</em></p>
+  <p></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Amusement Advisor</b></p><br>
+      <img src="logozastranicu.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Slika LOGO" width="500" height="333">
+    </div>
+
+    <!-- Sakrivanja sa malih ureðaja -->
+    <div class="w3-col m6  w3-padding-large">
+      <p> Dobrodošli na našu web stranicu. Mi smo ekipa koja Vam želi omoguæiti da upravo Vi postanete majstor u organizaciji svojih izlazaka. Na našoj stranici možete pronaæi sve potrebne informacije o lokalima u Sarajevu, poèevši od menija, cijena, dobne skupine i dress koda, te sve do najaktuelnijih dogaðanja u gradu. Takoðer, popunjavajuæi našu anektu, mi æemo Vam predložiti najbolje destinacije u gradu gdje biste mogli provesti svoje vrijeme u zavisnosti od Vašeg interesa. Od sada svaki Vaš izlazak æe biti dobro iskorišteno vrijeme. Naravno, za sve Vaše prijedloge smo otvoreni, pa bi nam bilo drago da nam se obratite i javite Vaše prijedloge i utiske. U dnu stranice se nalazi naša lokacija, kontakt telefon i email. Vaš Amusement Advisor
+     </p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Korisnici najviše pretražuju:</p>
+  <p class="w3-wide"><i class="fa fa-music"></i>Noæni izlazsci</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-heart"></i>Veèera u dvoje</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-bar-chart"></i>Poslovni sastanci</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">50+</span><br>
+    Restorana
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Klubova
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Pubova
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">10000+</span><br>
+    Osmijeha na licu
+  </div>
+</div>
+
+<!-- Druga slika- PONUDA -->
+<div class="slika2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PONUDA</span>
+  </div>
+</div>
+
+<!-- Iz menija- PONUDA -->
+<div class="w3-content w3-container w3-padding-64" id="ponuda">
+  <h3 class="w3-center">GALERIJA</h3>
+  <p class="w3-center"><em>Pogledajte slike najpopularnijih objekata u gradu<br> Kliknite na sliku da je poveæate</em></p><br>
+
+  <!-- Slike objekata/lokala -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="http://www.journal.hr/wp-content/uploads/2015/04/sarajevo_cheers.jpg?x21908"style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cheers">
+    </div>
+
+    <div class="w3-col m3">
+       <img src="http://www.journal.hr/wp-content/uploads/2015/04/sarajevo_cheers.jpg?x21908" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cheers">
+    </div>
+
+    <div class="w3-col m3">
+       <img src="cheers1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cheers">
+    </div>
+    <div class="w3-col m3">
+       <img src="cheers1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cheers">
+    </div>
+    <div class="w3-col m3">
+       <img src="cheers1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cheers">
+    </div>
+    <div class="w3-col m3">
+       <img src="cheers1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cheers">
+    </div>
+    <div class="w3-col m3">
+       <img src="cheers.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cheers">
+    </div>
+    <div class="w3-col m3">
+       <img src="cheers.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cheers">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">UÈITAJ JOŠ</button>
+  </div>
+</div>
+
+ <h3 class="w3-center">POSJETITE NOVO MJESTO U GRADU:</h3>
+
+<div class="row" id="Partneri">
+			<div class="col-sm-3">
+				
+			</div>
+
+			<a href="https://lepont.neocities.org/" target="_blanc">
+			<div class="col-sm-6" id="LePont">
+				<h1 class="w3-center" style="color:	#990099">LE PONT</h1>
+				
+			</div>
+			</a>
+
+			<div class="col-sm-3">
+				
+			</div>
+
+
+
+  <span class="w3-xxlarge w3-text-white w3-wide">LE PONT</span>
+</div>
+</div
+
+<!-- Iz menija-ANKETA -->
+<div class="w3-content w3-container w3-padding-64" id="anketa">
+
+
+<!-- Dio za poveæavanje slika kad se klikne-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Treæa slika za KONTAKT -->
+<div class="slika3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">KONTAKT</span>
+  </div>
+</div>
+
+<!-- Iz menija-KONTAKT -->
+<div class="w3-content w3-container w3-padding-64" id="kontakt">
+  <h3 class="w3-center">Gdje se nalazimo</h3>
+  <p class="w3-center"><em>Predložite nam nešto novo!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Dodaj google maps -->
+     <!--<div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>-->
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCRq0_WX5pQRjJq4EwVwkebStBx-4GMo2U'></script>
+<div style='overflow:hidden;height:400px;width:100%;'>
+<div id='gmap_canvas' style='height:400px;width:100%;'>
+</div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=122daf206950a39527847f69b7563ebf6b9bad33'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(43.8537767,18.390652600000067),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.8537767,18.390652600000067)});infowindow = new google.maps.InfoWindow({content:'<strong>AmusementAdvisor</strong><br>zmaja od bosne 33<br>71000 Sarajevo<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Sarajevo, BiH<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +387 61 111111<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: dinaberina@gmail.com<br>
+      </div>
+      <p>Doðite na kafu <i class="fa fa-coffee"></i>, ili ostavite poruku:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Ime" required name="Ime">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Poruka" required name="Poruka">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> POŠALJI PORUKU
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#poèetna" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Vrati se na poèetak</a>
+  <div class="w3-xlarge w3-section">
+  <a href="https://www.facebook.com">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.instagram.com">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.snapchat.com">
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.pinterest.com">
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.twitter.com">
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.linkedin.com">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </a>
+  </div>
+  <div class="okrugle">
+  <img src="dina.jpg" style="width:80px;height:80px;">
+  <img src="berina.jpg" style="width:80px;height:80px;">
+  </div>
+  <p>Copyright © <br> Berina Dedoviæ<br>Dina Sarajliæ</p>
+  <p><script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/316934/t/5" ></script></p>
+  <p><a href="dokumentacija.pdf" download><i class="fa fa-file" aria-hidden="true"></i></a>
+</div>  
+</footer>
+ 
+<!-- Add Google Maps -->
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCRq0_WX5pQRjJq4EwVwkebStBx-4GMo2U'></script>
+<div style='overflow:hidden;height:436px;width:341px;'>
+<div id='gmap_canvas' style='height:436px;width:341px;'>
+</div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.add-map.net/'>www.Add-Map</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=122daf206950a39527847f69b7563ebf6b9bad33'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(43.8537767,18.390652600000067),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.8537767,18.390652600000067)});infowindow = new google.maps.InfoWindow({content:'<strong>AmusementAdvisor</strong><br>zmaja od bosne 33<br>71000 Sarajevo<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+
+
+</body>
+</html>
+
