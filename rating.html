@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+<link rel="shortcut icon" href="logo2.ico" type="image/x-icon">
 <title>AmusementAdvisor</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,12 +14,13 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
-   	background: url('https://ak3.picdn.net/shutterstock/videos/4826771/thumb/1.jpg');
+   	background-image: url("pozadinarating.jpg");
     background-size: 100% 100%;
     min-height: 100%;
     height: 100%;
-    color: #777;
+    color: #8B008B;
     line-height: 1.8;
+    
 }
 
 /* Dio za posvjetljivanje slika */
@@ -33,7 +34,6 @@ body, html {
 /* Prva slika na stranici-ruke */
 .slika1 {
     background-image: url('https://ak3.picdn.net/shutterstock/videos/4826771/thumb/1.jpg');
-    
     min-height: 100%;
     
 }
@@ -47,9 +47,52 @@ body, html {
 	display: none;
 }
 
+#Unos {
+  display: block;
+	width: 100px;
+	height: 50px;
+	color: white;
+	margin: 20px auto;
+	background-color: #a4287d;
+	opacity:0.8;
+	border-radius: 0.5%;
+}
 
 #dugmeObrisi {
 	display: block;
+	width: 100px;
+	height: 50px;
+	color: white;
+	margin: 20px auto;
+	background-color: #a4287d;
+	opacity:0.8;
+	border-radius: 0.5%;
+}
+
+#dugmeDodaj {
+  display: block;
+	width: 100px;
+	height: 50px;
+	color: white;
+	margin: 20px auto;
+	background-color: #a4287d;
+	opacity:0.8;
+	border-radius: 0.5%;
+}
+
+#spremiDugme {
+  display: block;
+	width: 100px;
+	height: 50px;
+	color: white;
+	margin: 20px auto;
+	background-color: #a4287d;
+	opacity:0.8;
+	border-radius: 0.5%;
+}
+
+#zatvoriDugme {
+  display: block;
 	width: 100px;
 	height: 50px;
 	color: white;
@@ -78,13 +121,13 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="index.html" class="w3-bar-item w3-button">POÈETNA</a>
+    <a href="index.html" class="w3-bar-item w3-button">POÄŒETNA</a>
    
 
     </a>
   </div>
 
-  <!-- MENI-navigacija na malim ureðajima -->
+  <!-- MENI-navigacija na malim ureÄ‘ajima -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     
   </div>
@@ -97,7 +140,7 @@ body, html {
 	 <div align=center>
 	
    	<h1 id="prijavaNaslov" align=center>Prijavite se da bi vidjeli tabelu</h1>
-		<button type="button" 	background-color: "purple"  class="btn btn-primary" data-toggle="modal" data-target="#login" align=center onclick="">Prijava</button>
+		<button id="Unos" type="button" background-color: "purple"  class="btn btn-primary" data-toggle="modal" data-target="#login" align=center onclick="">Prijava</button>
 	</div>
 
 
@@ -105,7 +148,7 @@ body, html {
 		<h1>Tabela lokala</h1>
 		<br><br>
 			<div class="table-responsive">          
-				<table class="table" id="tabela"  bgcolor=”purple” text-color="black"  font-weight= "900">
+				<table class="table" id="tabela" text-color="black"  font-weight= "900">
 					<thead>
 						<tr>
 							<th>
@@ -122,7 +165,7 @@ body, html {
 								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(2)"></span>
 							</th>
 							<th>
-								Rang cijena(1-10)
+								Rang cijena
 								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(3)"></span>
 								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(3)"></span>
 							</th>
@@ -139,101 +182,57 @@ body, html {
 							
 						</tr>
 					</thead>
-					
-					<tbody align=left>
-					<tr class="danger">
-					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
-        <td>Cheers</td>
-        <td>3</td>
-        <td>5</td>
-        <td>150</td>
-        <td>25.12.2017.</td>
-        </tr> 
-        	<tr class="danger">
-					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
-        <td>Pasta ZEN</td>
-        <td>4</td>
-        <td>8</td>
-        <td>65</td>
-        <td>15.12.2017.</td>
-        </tr> 
-        	<tr class="danger">
-					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
-        <td>Brew pub</td>
-        <td>5</td>
-        <td>7</td>
-        <td>70</td>
-         <td>15.12.2017.</td>
-        </tr> 
-        	<tr class="danger">
-					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
-        <td>Mikser</td>
-        <td>5</td>
-        <td>6</td>
-        <td>500</td>
-         <td>20.12.2017.</td>        
-        </tr> 
-                	<tr class="danger">
-					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
-        <td>Revolucija</td>
-        <td>4</td>
-        <td>8</td>
-        <td>40</td>
-         <td>31.12.2017.</td>
-        </tr> 
-        	<tr class="danger">
-					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
-        <td>ORT</td>
-        <td>4</td>
-        <td>4</td>
-        <td>45</td>
-         <td>24.12.2017.</td>
-        </tr> 
-        <tr class="danger">
-					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
-        <td>Cinemas Sloga</td>
-        <td>2</td>
-        <td>4</td>
-        <td>600</td>
-         <td>24.12.2017.</td>
-        </tr> 
-        <tr class="danger">
-					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
-        <td>Vatra</td>
-        <td>4</td>
-        <td>8</td>
-        <td>80</td>
-         <td>24.12.2017.</td>
-        </tr> 
-        <tr class="danger">
-					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
-        <td>Trasa</td>
-        <td>3</td>
-        <td>4</td>
-        <td>95</td>
-         <td>29.12.2017.</td>
-        </tr> <tr class="danger">
-					<td><input  value="1" type="checkbox" onclick="oznaciSve()"></td>
-        <td>Woki</td>
-        <td>3</td>
-        <td>3</td>
-        <td>100</td>
-         <td>26.12.2017.</td>
-        </tr> 
-      	
+					<tbody>
 					</tbody>
 				</table>
 			<button id="dugmeObrisi" onclick="obrisi()">
 				Obrisi selektovano
 			</button>
+			<button type="button" data-toggle="modal" data-target="#myModal" id="dugmeDodaj">
+			  Dodaj lokal
+			</button>
 		</div>
-		
-		<!--- <script src="js/dataTables.bootstrap.min.js"></script>
-	   <script> $('#tabela').dataTable();</script> ne radi --> 
-	<!--<button type="button" id="dugme" onclick="obrisi()">Obrisi selektovano</button>
-	-->
-	</div>
+</div>
 	
+  <div id="myModal" class="modal fade" role="dialog" data-backdrop="keyboard">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">Ã—</button>
+          <h3 class="modal-title">Unesite novi lokal</h3>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class = "form-group">
+              <label for="nam">Ime:</label>
+              <input type="text" class="form-control" id="ime">
+            </div>
+            <div class = "form-group">
+              <label for="kat">Ocjena:</label>
+              <input type="text" class="form-control" id="ocjena">
+            </div>
+            <div class = "form-group">
+              <label for="cij">Rang cijena:</label>
+              <input type="text" class="form-control" id="rang">
+            </div>
+            <div class = "form-group">
+              <label for="cij">Kapacitet:</label>
+              <input type="text" class="form-control" id="kapacitet">
+            </div>
+            <div class = "form-group">
+              <label for="cij">Datum sljedeceg eventa:</label>
+              <input type="text" class="form-control" id="datum">
+            </div>
+          </form>
+        </div>
+        <div class= "modal-footer">
+          <button id="spremiDugme" type="button" data class = "form-group" onclick="dodaj()">Dodaj</button>
+          <button id="zatvoriDugme" data-dismiss="modal">Zatvori</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 	
 	<script type="text/javascript" src="tabela.js"></script>
 
@@ -249,12 +248,12 @@ body, html {
 					<form method="post" action='' name="login_form">
 						<div class="login-unos">
 							<span><div class="glyphicon glyphicon-user"></div></span>
-							<input type="text" class="form-control" id="user" placeholder="Korisnièko ime">
+							<input type="text" class="form-control" id="user" placeholder="KorisniÄko ime">
 							<br />
 						</div>
 						<div class="login-unos">
 							<span><div class="glyphicon glyphicon-lock"></div></span>
-							<input type="password" class="form-control" name="pass" id="pass" placeholder="Šifra">
+							<input type="password" class="form-control" name="pass" id="pass" placeholder="Å ifra">
 						</div>
 						<br />
 						<button type="button" class="btn btn-primary" onclick="validiraj()">Sign in</button>
